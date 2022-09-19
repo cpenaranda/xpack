@@ -1680,8 +1680,8 @@ xpack_compress(struct xpack_compressor *c, const void *in, size_t in_nbytes,
 	       void *out, size_t out_nbytes_avail)
 {
 	/* Don't bother trying to compress very small inputs. */
-	if (in_nbytes < 100)
-		return 0;
+	/*if (in_nbytes < 100)
+		return 0;*/
 
 	/* Safety check */
 	if (unlikely(in_nbytes > c->max_buffer_size))
